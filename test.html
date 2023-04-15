@@ -1,0 +1,24 @@
+<script>
+const tiles = [
+    {id: 0, xCoord: 1, yCoord:1, image: ''},
+    {id: 1, xCoord: 2, yCoord:1, image: ''},
+    {id: 2, xCoord: 3, yCoord:1, image: ''},
+    {id: 3, xCoord: 4, yCoord:1, image: ''},
+    {id: 4, xCoord: 1, yCoord:2, image: ''},
+    {id: 5, xCoord: 2, yCoord:2, image: ''},
+    {id: 6, xCoord: 3, yCoord:2, image: ''},
+    {id: 7, xCoord: 4, yCoord:2, image: ''},
+    {id: 8, xCoord: 1, yCoord:3, image: ''},
+    {id: 9, xCoord: 2, yCoord:3, image: ''},
+    {id: 10, xCoord: 3, yCoord:3, image: ''},
+    {id: 11, xCoord: 4, yCoord:3, image: ''},
+    {id: 12, xCoord: 1, yCoord:4, image: ''},
+    {id: 13, xCoord: 2, yCoord:4, image: ''},
+    {id: 14, xCoord: 3, yCoord:4, image: ''},
+    // 15 is the empty tile
+    {id: 15, xCoord: 4, yCoord: 4, image:''}];
+
+    tilePicker = tiles.filter(tile => tile.xCoord === tiles[15].xCoord);
+    tilePicker = tilePicker.filter(tile => tile.yCoord === tiles[15].xCoord - 1);
+    console.log(tilePicker[0].id);
+</script>
